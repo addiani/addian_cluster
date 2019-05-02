@@ -12,3 +12,13 @@
 
 11-  watch kubectl get nodes --insecure-skip-tls-verify=true
 12-  sudo su - jenkins -s /bin/bash
+
+# ami change 
+kops edit ig nodes [change the ami to a specified one]
+kops update cluster
+kops update cluster --yes
+remove node manually
+
+docker version change
+
+security group whitelisting.

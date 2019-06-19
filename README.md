@@ -13,6 +13,10 @@
 11-  watch kubectl get nodes --insecure-skip-tls-verify=true
 12-  sudo su - jenkins -s /bin/bash
 
+## deleting cluster:
+kops delete cluster --name saidcluster.com --yes
+
+
 # ami change 
 kops edit ig nodes [change the ami to a specified one]
 kops update cluster
